@@ -9,4 +9,24 @@ function findMatches(wordToMatch, restaurant) {
         return establishments.name.match(regex) || establishments.category.match(regex)
     });
 }
- 
+
+function displayMatches() {
+    const matchArray = findMatches(this.value, restaurant);
+    const html = matchArray.map(establishments => {
+        return `
+         <li>
+            <span class="name">${establishments.name}</span>
+            <span class="category">${establishments.category}</span>
+            <span class="address">${establishments.address_line_1}, ${establishments.address_line_2}, ${establishments.city}, ${establishments.state}, ${establishments.zip}
+            </span>
+        </li>
+        `;
+    }).join('');
+    suggestions.innerHTML=html;    
+}
+
+const searchInput = document.querySelector('.search');
+const suggestions = document.querySelector('.suggestions');
+
+searchInput.addEventListener('change', displayMatches);
+searchInput.addEventListener('keyup', displayMatches);
