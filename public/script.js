@@ -22,7 +22,11 @@ function displayMatches() {
         </li>
         `;
     }).join('');
-    suggestions.innerHTML=html;    
+    suggestions.innerHTML=html;
+    
+    const replaceRegex = new RegExp("------",'gi');
+    delEmptyAddress = html.replace(replaceRegex," ");
+    suggestions.innerHTML=delEmptyAddress;    
 }
 
 const searchInput = document.querySelector('.search');
