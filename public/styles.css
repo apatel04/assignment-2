@@ -1,5 +1,7 @@
 body {
     background-color: #91403D;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
 }
 
     .wrapper {
@@ -20,7 +22,13 @@ body {
         display: flex;
     }
 
-    .search {
-        width: 100%;
+    .search-form {
+        max-width: 400px;
+        margin: 50px auto;
         font-family: 'Quicksand', sans-serif;
     }
+
+    input {
+        width: 100%;
+        padding: 10px;
+      }
