@@ -24,9 +24,9 @@ function displayMatches() {
     }).join('');
     suggestions.innerHTML=html;
     
-    const replaceRegex = new RegExp("------",'gi');
+    const replaceRegex = new RegExp("------,",'gi');
     delEmptyAddress = html.replace(replaceRegex," ");
-    suggestions.innerHTML=delEmptyAddress;    
+    suggestions.innerHTML=delEmptyAddress;  
 }
 
 const searchInput = document.querySelector('.search');
