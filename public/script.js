@@ -15,10 +15,10 @@ function displayMatches() {
     const html = matchArray.map(establishments => {
         return `
          <li>
-            <span class="name">${establishments.name}</span>
-            <span class="category">${establishments.category}</span>
-            <span class="address">${establishments.address_line_1}, ${establishments.address_line_2}, ${establishments.city}, ${establishments.state}, ${establishments.zip}
-            </span>
+            <span class="name">${establishments.name}</span><br>
+            <span class="category">${establishments.category}</span><br>
+            <span class="address"><address>${establishments.address_line_1}, ${establishments.address_line_2}, ${establishments.city}, ${establishments.state}, ${establishments.zip}
+            </address></span>
         </li>
         `;
     }).join('');
