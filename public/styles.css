@@ -1,5 +1,5 @@
 body {
-    background-color: #91403D;
+    background-color: #1cc5db;
     box-sizing: border-box;
     font-family: 'Quicksand';
 }
@@ -15,6 +15,8 @@ body {
 
     .header > h1 {
         font-family: 'Quicksand', sans-serif;
+        color: white;
+        font-size: 50px;
     }
 
     .header {
@@ -42,7 +44,7 @@ body {
         padding: 5px;
         max-width: 500px;
         background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(229,232,45,1) 0%, rgba(146,237,255,1) 100%);
+        background: linear-gradient(90deg, rgb(241, 238, 8) 0%, rgb(232, 89, 45) 0%, rgba(146,237,255,1) 100%);
     }
 
     .name {
